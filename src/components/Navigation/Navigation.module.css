@@ -1,0 +1,15 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+.nav-links {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.strike {
+  text-decoration: line-through;
+}
