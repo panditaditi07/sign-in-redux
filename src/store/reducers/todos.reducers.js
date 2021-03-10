@@ -23,17 +23,17 @@ const todos = (state = initialState, action) => {
         ...state,
         data: todos,
       };
-    case "COMPLETED_TASK":
-      const ctodo = state.data.filter((todo) => {
-        return todo.id === action.id && todo.isCompleted === false
-          ? (todo.isCompleted = true)
-          : (todo.isCompleted = false);
-      });
-      console.log(ctodo);
-      return {
-        ...state,
-        data: [...state.data],
-      };
+    // case "COMPLETED_TASK":
+    //   const ctodo = state.data.filter((todo) => {
+    //     return todo.id === action.id && todo.isCompleted === false
+    //       ? (todo.isCompleted = true)
+    //       : (todo.isCompleted = false);
+    //   });
+    //   console.log(ctodo);
+    //   return {
+    //     ...state,
+    //     data: [...state.data],
+    //   };
     default:
       return state;
   }

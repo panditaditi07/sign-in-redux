@@ -3,6 +3,9 @@ import { connect } from "react-redux";
 import * as actionCreator from "../../store/actions/login.action";
 import { history } from "../../App";
 import style from "./Login.module.css";
+//email:aditi@gmail.com
+//password:1234
+//username:Aditi
 function Login(props) {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -22,6 +25,7 @@ function Login(props) {
           <div className={style["login-div"]}>
             <label htmlFor="name">Username:</label>
             <input
+              className={style["input"]}
               type="text"
               name="username"
               placeholder="John Doe"
@@ -33,6 +37,7 @@ function Login(props) {
           <div className={style["login-div"]}>
             <label htmlFor="email">Email:</label>
             <input
+              className={style["input"]}
               type="text"
               name="email"
               placeholder="example@xmail.com"
@@ -44,6 +49,7 @@ function Login(props) {
           <div className={style["login-div"]}>
             <label htmlFor="password">Password:</label>
             <input
+              className={style["input"]}
               type="password"
               name="username"
               placeholder="example@1234"
@@ -52,7 +58,9 @@ function Login(props) {
             />
           </div>
           <br />
-          <button type="submit">Login</button>
+          <button className={style["button"]} type="submit">
+            Login
+          </button>
         </form>
       </div>
     </>

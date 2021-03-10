@@ -9,6 +9,7 @@
 }
 .link {
   text-decoration: none;
+  color: black;
 }
 .strike {
   text-decoration: line-through;

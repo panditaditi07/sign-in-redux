@@ -3,6 +3,7 @@ import Navigation from "../../components/Navigation/Navigation";
 import { connect } from "react-redux";
 import * as actionCreator from "../../store/actions/todolist.actions";
 import Todolist from "./Todolist";
+//delete task on double click
 class AddToDo extends Component {
   state = {
     input: "",

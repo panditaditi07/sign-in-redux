@@ -13,8 +13,9 @@ export const checkLogin = (username, email, password) => {
   return async (dispatch) => {
     try {
       if (
-        email === "aditi@gmail.com" ||
-        (email === "aditipandit81@gmail.com" && password === "1234")
+        email === "aditi@gmail.com" &&
+        password === "1234" &&
+        username === "Aditi"
       ) {
         await new Promise((resolve, reject) =>
           setTimeout(() => resolve(), 500)
